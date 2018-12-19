@@ -1,0 +1,29 @@
+---
+title: "The Effect of Age and Treatment on Response Times"
+---
+
+### Introduction
+
+  This analysis was done as an extension regarding a larger experiment that was conducted by the analyst and other researchers. The experiment studied the effects of moral wiggle room and ego-depletion, both individually and interactively, on dishonest behavior in a self-reporting scheme. Participants rolled a virtual die and were then asked to report their roll as even or odd, knowing even rolls received more raffle tickets, and thus an increased chance of winning a $50 gift card. 
+
+
+  For a more thorough explanation, follow the link here file:///Users/alexandraschewe/Downloads/Final%20Paper/FinalPaper.html. To identify two factors that potentially impacted the results, this project explored the relationship, if any, between age and treatment conditions and their effect on response times. Note that individuals in the Moral Wiggle Room (MWR) and the Interaction Treatment were told they would be cut off randomly at some point during a ten-second window, whereas participants in the Baseline and Ego Depletion Treatment had no time cutoff. 
+
+
+  While there is no literature on the relation between age and moral wiggle room, previous research shows that response time generally slows with aging in cognitive tasks (Haier et al., 2005). Regarding ego-depletion, research suggests young adults (25>) are most susceptible to depletion effects whereas adults aged 40-65 show no significant symptoms indicative of depletion (Dahm et al., 2011). Given that there is an established association between age and response time but none between age and depletion, we expect response times will increase in participants with age, but the treatment will have little effect on this relationship. Therefore, we hypothesize there will be a signficant positive relationship between age and response time, but there will be no interaction between treatment and age on response time. 
+
+### Hypotheses 
+
+Hypothesis 1
+Ho: Response time is independent of age
+Ha: Response time increases as participants' age increases
+
+Hypothesis 2
+Ho: Response time is independent of treatment condition
+Ha: Response times will vary according to treatment condition
+
+Hypothesis 3
+Ho: Response time is independent of treatment condition and age's interaction
+Ha: Response time is influenced by an interaction between treatment condition and participant's age
+
+Note that one of the treatments is titled Interaction and refers to the treatment with both moral wiggle room and depletion.

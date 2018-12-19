@@ -1,0 +1,19 @@
+---
+title: "Data"
+---
+
+
+``` {r, echo = F}
+head(FullRTSet)
+```
+
+
+  Data were recorded using PsychoPy and analyzed in R. The variables relevant to this project, treatment, response time, and age were reconstructed and used for our analysis as represented above. In the baseline there was a 44-second response time, approximately twenty seconds longer than the next highest response time, which was also in the baseline condition. Although no explicit reason was found as to why the response time was so high, we conducted a secondary analysis withholding this figure to explore how the results differed.
+
+
+  A simple scatterplot is included below illustrating the general distribution of the all response times and ages across treatments. We used a multiple regression to analyze the data. This enabled us to investigate the potential relationship between age and treatment and their effect, if any, on response time. Doing so provided the advantage of considering a model for predicting response times based on explanatory variables that, if accurate, could then be integrated into the broader experiment. We included treatments to further test the previous literature that depletion has no effect, and to ensure if there was an effect between treatment conditions, age, and response times, it would be accounted for. 
+
+
+``` {r, echo = F}
+plot(FullRTSet$Age, FullRTSet$RT, xlab= "Age", ylab= "Response Time", main = "Response Times Across Treatments")
+```

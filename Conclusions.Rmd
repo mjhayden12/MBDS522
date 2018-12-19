@@ -1,0 +1,42 @@
+---
+title: "Conclusions"
+---
+
+### Main Findings
+
+  This analysis set out to test the potential relationship between treatment conditions and age and their effect on response times in a self-report paradigm. To reiterate the main findings, in the analysis that included the outlier response time of 44 seconds, response time was found to decrease with each subsequent year by 0.01, though this was a highly insignificant result (p-value 0.82). There was a significant relationship between the Interaction Treatment and response time at the 5% significance level, which predicted a decrease response time from 10.67 seconds in the Baseline to 5.33 seconds. The significance of this relationship grew when the analysis was run during which it was assumed the effect of age was independent of the treatment, increasing to a p-level from 0.04 to 0.002. The effect of age actually reversed and increased with each year by .04, however, considering it had a p-value of 0.21, we can't state this with confidence as it doesn't reach our level of significance. The response time did, however, decrease from 9.18 in the Baseline Treatment to 5.81 in the Interaction. Moreover, during this analysis the Moral Wiggle Room Treatment was found to predict response time with a p-level of .0004, with a response time decrease by 3.95 seconds. 
+
+
+  Eliminating the outlier, although there was a predicted increase of 0.03 seconds with each year, there were no significant relationships in the regression that assumed an interaction between age and treatment. Interestingly, running the regression with the effect of age assumed independent of treatment, response time increased from 7.91 seconds in the Baseline by 0.054 seconds with each year with a p-value of 0.042. As was the case in the original dataset, the Interaction and Moral Wiggle Room treatments predicted a decrease in response time by 2.46 (p-value 0.006) and 3.01 (p-value 0.0008) respectively. 
+
+
+  These findings indicate that under the assumption that the 44-second response time was an error, age had a significant effect on response time. Additionally, the Moral Wiggle Room and Interaction conditions had a significant impact on response time when it was assumed there was no interaction with age. Based on this we can conclude that the Moral Wiggle Room and Interaction conditions predicted a significant change in response times in both the trimmed and untrimmed data. Age, however, only had a significant effect after eliminating the outlier and when it was assumed age was independent of treatment conditions' influence. These findings support the notion that treatment conditions don't interact with age in the effect on response times, however, the Moral Wiggle Room and Interaction Treatments do predict a significant change in response times. Furthermore, age is predicted to have a significant relationship to response time, but isn't dependent on the treatment condition and is significant only under the assumption that the 44-second response time was an error. 
+
+### Hypotheses
+
+  Under the premise that the outlier response time was an error, we can reject our first null hypothesis that age and response time are completely independent. We can also reject the second null hypothesis that response time is independent of treatment condition. We can't, however, state that all treatment conditions predict response time, as depletion didn't reach significance.  support our general hypothesis that there is no interaction between age and treatment's relationship with response time. We cannot reject the third null hypothesis that response time is independent of age as it interacts with the treatment condition. 
+
+### Limitations
+
+  There were a few limitations to this analysis. Since the experiment was conducted primarily on the University of Pennsylvania's campus, the vast majority of participants were typical college age (<25). Thus, our sample isn't necessarily representative of the population. Moreover, the maximum allotted time in the Moral Wiggle Room and Interaction Treatments was capped at approximately eleven seconds. This was done in accordance to our experimental design, which is explained further in the paper, available through the link in the "Introduction" tab. Regardless, the maximum time of eleven seconds limited the distribution of response times compared to the Depletion and Baseline conditions. This could be a potential explanation for the significant predicted difference in response times for the Moral Wiggle Room and Interaction Treatments.
+
+### Implications and Future Directions
+
+  From this we can conclude that while age and treatment conditions affect the response time, the treatment condition doesn't interact with age to produce these results. Moreover, it seemed that participants in the depletion condition didn't have a significant predicted difference in response time even when age was accounted for. However, previous literature split up age groups into 25> and 40-65, which allowed for greater distinction. Given the limited sample of adults over the age of 25, we chose not to run a regression by grouping ages into categories. 
+
+
+  We recommend future experiments increase the sample size with a wider range of ages that are more equally distributed. Future researchers should be aware of cutoff times, as they restrict the distribution of response times, and can distort the data, as may have been the case here. Unfortunately the time cutoff was essential to the experimental design, so eliminating it would defeat the purpose of the Moral Wiggle Room and Treatment conditions. Regardless, this serves as a starting point for researchers interested in response times for self-reporting tasks in conditions involving Moral Wiggle Room and Depletion, independently and interactively. 
+
+
+
+
+
+
+
+                                                    References
+
+Dahm, T.; Neshat-Doost, H.T; Golden, A.M; Horn E., Hagger M; Dalgleish, T. (2011) Age shall not   weary us: Deleterious effects of self-regulation depletion are specific to younger     
+  adults. PLOS ONE, 7(1): 10.1371/annotation/7e8b5c93-06a3-46c9-999b-93401d9e9cfd.                 https://doi.org/10.1371/annotation/7e8b5c93-06a3-46c9-999b-93401d9e9cfd 
+
+
+Haier, R.; Junge, R.E.; Yeo, R.A.; Head, K.; Alkrie, M.T. (2005). Structural brain variation,     age, and response time. Cognitive, Affective, & Behavioral Neuroscience, 5(2):246-251 

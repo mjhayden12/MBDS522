@@ -1,0 +1,54 @@
+---
+title: "Results"
+---
+
+
+```{r, echo = F}
+library(dplyr)
+BaselineRTSet <- BaselinesResults %>% 
+  select(Treatment,RT,Age)
+View(BaselineRTSet)
+MWRRTSet <- MWRResults %>% 
+  select(Treatment,RT,Age)
+DepletionRTSet <- DepletionResults %>%
+  select(Treatment,RT, Age)
+InteractionRTSet <- InteractionResults %>%
+  select(Treatment,RT,Age)
+FullRTSet <- bind_rows(BaselineRTSet,MWRRTSet,DepletionRTSet,InteractionRTSet)
+View(FullRTSet)
+Reg1 <- lm(RT ~ Age * Treatment, data = FullRTSet)
+summary(Reg1)
+```
+
+
+  Interpreting the results we can see that the average response time in the Baseline Treatment with a predicted age of zero is 10.674 seconds. For each additional year, the response time decreases by -0.014. In the Depletion Treatment, the expected response time decreases by 5.055 seconds, the Interaction Treatment by -5.335, and MWR by 4.177 seconds. This is surprising considering the intuition that people who have a depleted ego might be slower to respond, however, baseline is clearly the highest response time. There is a significant effect seen in the Interaction Treatment with a p-value of 0.0458. From this we can conclude that the effect of the Interaction Treatment alone has a significant impact on response time. Note however that the Depletion Treatment has a p-value of 0.0608, indicating a strong directional effect, though insignificant at the 5% level. 
+
+
+  Moving onto the interactions, there were no significant results between age and the treatment conditions for response time. The greatest effect is in the age and depletion treatment with a p-value of 0.1569, however, it doesn’t reach a threshold that would allow us to state with confidence that there is an interaction between the two variables.  
+
+
+``` {r, echo = F}
+plot(Reg1)
+```
+
+
+  Looking at the supplemental graphs, the residual vs. fitted graph indicates there isn't non-linear relationship that could have been missed by the initial analysis. The data points are approximately normally distributed as evidenced by the Normal Q-Q graph. However, this is where the outlier discussed earlier appears as plot number 22, which deviates a great deal. The scale-location plot does reveal some clustering along the range of predictors, however, the horizontal line indicates a generally equal variance. The residuals vs. leverage graph shows that while data point twenty-two is extreme, it isn't influential enough to be in the region of Cook's distance.
+
+  Below the data is analyzed with the assumption that the effect of age is the same regardless of the condition. 
+
+
+``` {r, echo = F}
+Reg2 <- lm(RT ~ Age + Treatment, data = FullRTSet)
+summary(Reg2)
+```
+
+
+  The predicted response time in the Baseline Treatment with a predicted age of zero is 9.179 seconds. With each added year there is a .042 increase in response time in the Baseline Treatment. While there is a decrease in predicted response time by 1.57 seconds, it fails to reach significance (p-value = .15) There are, however, statistically significant results in the Interaction and Moral Wiggle Room Treatments with p-values of .002 and .0004 respectively. From this we can conclude that in the Interaction Treatment, response time is predicted to decrease by 3.372 seconds and 3.952 seconds in the Moral Wiggle Room Treatments. 
+
+
+``` {r, echo = F}
+plot(Reg2)
+```
+
+
+  Comparing the outputs to the graphs above, there is little change. However, there is slightly less clustering in the residuals vs. fitted and the scale-location data points.
