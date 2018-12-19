@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Conclusions</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">BDS 522 Project</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Introduction</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li>
+  <a href="results.html">Results</a>
+</li>
+<li>
+  <a href="trimmedresults.html">Trimmed Results</a>
+</li>
+<li>
+  <a href="conclusions.html">Conclusions</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Conclusions</h1>
+
+</div>
+
+
+<div id="main-findings" class="section level3">
+<h3>Main Findings</h3>
+<p>This analysis set out to test the potential relationship between treatment conditions and age and their effect on response times in a self-report paradigm. To reiterate the main findings, in the analysis that included the outlier response time of 44 seconds, response time was found to decrease with each subsequent year by 0.01, though this was a highly insignificant result (p-value 0.82). There was a significant relationship between the Interaction Treatment and response time at the 5% significance level, which predicted a decrease response time from 10.67 seconds in the Baseline to 5.33 seconds. The significance of this relationship grew when the analysis was run during which it was assumed the effect of age was independent of the treatment, increasing to a p-level from 0.04 to 0.002. The effect of age actually reversed and increased with each year by .04, however, considering it had a p-value of 0.21, we can’t state this with confidence as it doesn’t reach our level of significance. The response time did, however, decrease from 9.18 in the Baseline Treatment to 5.81 in the Interaction. Moreover, during this analysis the Moral Wiggle Room Treatment was found to predict response time with a p-level of .0004, with a response time decrease by 3.95 seconds.</p>
+<p>Eliminating the outlier, although there was a predicted increase of 0.03 seconds with each year, there were no significant relationships in the regression that assumed an interaction between age and treatment. Interestingly, running the regression with the effect of age assumed independent of treatment, response time increased from 7.91 seconds in the Baseline by 0.054 seconds with each year with a p-value of 0.042. As was the case in the original dataset, the Interaction and Moral Wiggle Room treatments predicted a decrease in response time by 2.46 (p-value 0.006) and 3.01 (p-value 0.0008) respectively.</p>
+<p>These findings indicate that under the assumption that the 44-second response time was an error, age had a significant effect on response time. Additionally, the Moral Wiggle Room and Interaction conditions had a significant impact on response time when it was assumed there was no interaction with age. Based on this we can conclude that the Moral Wiggle Room and Interaction conditions predicted a significant change in response times in both the trimmed and untrimmed data. Age, however, only had a significant effect after eliminating the outlier and when it was assumed age was independent of treatment conditions’ influence. These findings support the notion that treatment conditions don’t interact with age in the effect on response times, however, the Moral Wiggle Room and Interaction Treatments do predict a significant change in response times. Furthermore, age is predicted to have a significant relationship to response time, but isn’t dependent on the treatment condition and is significant only under the assumption that the 44-second response time was an error.</p>
+</div>
+<div id="hypotheses" class="section level3">
+<h3>Hypotheses</h3>
+<p>Under the premise that the outlier response time was an error, we can reject our first null hypothesis that age and response time are completely independent. We can also reject the second null hypothesis that response time is independent of treatment condition. We can’t, however, state that all treatment conditions predict response time, as depletion didn’t reach significance. support our general hypothesis that there is no interaction between age and treatment’s relationship with response time. We cannot reject the third null hypothesis that response time is independent of age as it interacts with the treatment condition.</p>
+</div>
+<div id="limitations" class="section level3">
+<h3>Limitations</h3>
+<p>There were a few limitations to this analysis. Since the experiment was conducted primarily on the University of Pennsylvania’s campus, the vast majority of participants were typical college age (&lt;25). Thus, our sample isn’t necessarily representative of the population. Moreover, the maximum allotted time in the Moral Wiggle Room and Interaction Treatments was capped at approximately eleven seconds. This was done in accordance to our experimental design, which is explained further in the paper, available through the link in the “Introduction” tab. Regardless, the maximum time of eleven seconds limited the distribution of response times compared to the Depletion and Baseline conditions. This could be a potential explanation for the significant predicted difference in response times for the Moral Wiggle Room and Interaction Treatments.</p>
+</div>
+<div id="implications-and-future-directions" class="section level3">
+<h3>Implications and Future Directions</h3>
+<p>From this we can conclude that while age and treatment conditions affect the response time, the treatment condition doesn’t interact with age to produce these results. Moreover, it seemed that participants in the depletion condition didn’t have a significant predicted difference in response time even when age was accounted for. However, previous literature split up age groups into 25&gt; and 40-65, which allowed for greater distinction. Given the limited sample of adults over the age of 25, we chose not to run a regression by grouping ages into categories.</p>
+<p>We recommend future experiments increase the sample size with a wider range of ages that are more equally distributed. Future researchers should be aware of cutoff times, as they restrict the distribution of response times, and can distort the data, as may have been the case here. Unfortunately the time cutoff was essential to the experimental design, so eliminating it would defeat the purpose of the Moral Wiggle Room and Treatment conditions. Regardless, this serves as a starting point for researchers interested in response times for self-reporting tasks in conditions involving Moral Wiggle Room and Depletion, independently and interactively.</p>
+<pre><code>                                                References</code></pre>
+<p>Dahm, T.; Neshat-Doost, H.T; Golden, A.M; Horn E., Hagger M; Dalgleish, T. (2011) Age shall not weary us: Deleterious effects of self-regulation depletion are specific to younger<br />
+adults. PLOS ONE, 7(1): 10.1371/annotation/7e8b5c93-06a3-46c9-999b-93401d9e9cfd. <a href="https://doi.org/10.1371/annotation/7e8b5c93-06a3-46c9-999b-93401d9e9cfd" class="uri">https://doi.org/10.1371/annotation/7e8b5c93-06a3-46c9-999b-93401d9e9cfd</a></p>
+<p>Haier, R.; Junge, R.E.; Yeo, R.A.; Head, K.; Alkrie, M.T. (2005). Structural brain variation, age, and response time. Cognitive, Affective, &amp; Behavioral Neuroscience, 5(2):246-251</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
