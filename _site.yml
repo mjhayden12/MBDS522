@@ -10,7 +10,7 @@ navbar:
     - text: "Results"
       href: Results.html
     - text: "Trimmed Results"
-      href: Trimmedresults.html
+      href: TrimmedResults.html
     - text: "Conclusions"
       href: Conclusions.html
   
