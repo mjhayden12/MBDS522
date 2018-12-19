@@ -8,9 +8,9 @@ navbar:
     - text: "Data"
       href: data.html
     - text: "Results"
-      href: results.html
+      href: Results.html
     - text: "Trimmed Results"
-      href: trimmedresults.html
+      href: Trimmedresults.html
     - text: "Conclusions"
-      href: conclusions.html
+      href: Conclusions.html
   
