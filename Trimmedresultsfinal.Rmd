@@ -1,0 +1,39 @@
+---
+title: "Trimmed Results"
+---
+
+
+```{r, echo = F}
+TrimmedBaselineRTSet <- BaselineRTSet[-c(22), ]
+TrimmedFullRTSet <- FullRTSet[-c(22), ]
+Reg3 <- lm(RT ~ Age * Treatment, data = TrimmedFullRTSet)
+summary(Reg3)
+```
+
+
+  Eliminating the outlier reduces the predicted response by over two seconds. To reiterate, the intercept represents the expected response time for a person aged zero in the Baseline Treatment. Looking at Treatment Interaction, there is no longer a significant effect. In fact, there are no significant effects between age and response time, any of the treatments and response time, or the interaction of age and any of the treatments on response time. 
+
+
+```{r, echo = F}
+plot(Reg3)
+```
+
+
+  While the distribution of the data points appear to be the same after eliminating the outlier, notice the change in scale. The residuals vs. fitted y-axis upper limit decreases from 30 to 15, 8 to 4 in the normal Q-Q, 2.5 to 2 in the scale-location, and 8 to 4 in the residuals vs. leverage. These changes emphasize the extent to which the response time differed from the rest. 
+
+
+```{r, echo = F}
+Reg4 <- lm(RT ~ Age + Treatment, data = TrimmedFullRTSet)
+summary(Reg4)
+```
+
+
+  The expected response time for a person aged zero in the baseline is 7.913, which increases by 0.055 seconds per year added at .05 level (p-value = .042). From this we can conclude age has a significant impact on response time. Additionally, we see no change in the direction of the significance of effects in the Interaction and Moral Wiggle Room Treatments, but do see a slight decrease in the p-value from 0.002 to 0.006 in the Interaction and 0.0004 to 0.0008 in the Moral Wiggle Room Treatment. These p-values, however, remain highly significant.  
+
+
+```{r, echo = F}
+plot(Reg4)
+```
+
+
+There were no significant changes in the graphs, and the data appear similar to the plots above.
